@@ -1,7 +1,6 @@
 .introducao-bg {
-  background-color: #000;
-  color: #fff;
-  box-shadow: inset 0 -120px #fff;
+  background-color: var(--cor-12);
+  box-shadow: inset 0 -120px var(--cor-0);
 }
 
 .introducao {
@@ -25,25 +24,12 @@
   border-radius: 4px;
 }
 
-.introducao h1 span {
-  color: #ffbb00;
-}
-
 .introducao h1 {
   margin-bottom: 32px;
-  font-size: 64px;
-  line-height: 1.125;
-  font-family: "Poppins";
-  font-weight: 600;
 }
 
 .introducao p {
   margin-bottom: 20px;
-  font-size: 24px;
-  line-height: 1.5;
-  color: #b2b2b2;
-  font-family: "Roboto";
-  font-weight: 400;
 }
 
 @media (max-width: 1200px) {
@@ -57,7 +43,7 @@
 
 @media (max-width: 800px) {
   .introducao-bg {
-    background-color: #111;
+    background-color: var(--cor-11);
     padding-top: 40px;
     box-shadow: inset 0 -60px #fff;
   }
