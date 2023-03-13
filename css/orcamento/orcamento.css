@@ -1,0 +1,60 @@
+#orcamento {
+  background: linear-gradient(var(--cor-11) 700px, var(--cor-1) 0px);
+}
+
+.orcamento {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 120px;
+}
+
+.orcamento h2 {
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.orcamento h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  position: absolute;
+  left: -12px;
+}
+
+.orcamento-produto,
+.orcamento-dados {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.orcamento-produto {
+  border-radius: 5px 0 0 5px;
+  background-color: var(--cor-12);
+}
+
+.orcamento-produto label {
+  background: #ccc;
+  padding: 20px;
+  display: inline-block;
+}
+
+.orcamento-dados {
+  border-radius: 0 5px 5px 0;
+  background-color: var(--cor-0);
+}
+
+.orcamento-conteudo {
+  padding: 20px;
+  background: #222;
+  margin: 20px;
+  display: none;
+}
+
+#bikcraft:checked ~ #orcamento-bikcraft,
+#seguro:checked ~ #orcamento-seguro {
+  display: block;
+}
