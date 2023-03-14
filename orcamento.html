@@ -43,21 +43,36 @@
     <form class="orcamento container" action="./">
       <div class="orcamento-produto">
         <h2 class="font-1-xs cor-5">Bikcraft ou Seguro?</h2>
-
-        <input type="radio" name="tipo" value="bikcraft" id="bikcraft" />
+      
+        <input class="input" type="radio" name="tipo" value="bikcraft" id="bikcraft" />
         <label for="bikcraft">Bikcraft</label>
 
         <input type="radio" name="tipo" value="seguro" id="seguro" />
         <label for="seguro">Seguro</label>
-
+      
         <div class="orcamento-conteudo" id="orcamento-bikcraft">
-          <h2 class="font-1-m cor-0">Escolha a sua Bikcraft</h2>
-          <p class="font-1-m cor-0">Esse é um conteudo teste</p>
+          <h2 class="font-1-xs cor-5">Escolha a sua </h2>
+          <input type="radio" name="produto" value="nimbus" id="nimbus" />
+          <label for="seguro">Nimbus Stark <span>R$4999</span></label>
+
+          <input type="radio" name="produto" value="magic" id="magic" />
+          <label for="seguro">Magic Might <span>R$2499</span></label>
+
+          <input type="radio" name="produto" value="nebula" id="nebula" />
+          <label for="seguro">Nebula Cosmic <span>R$3999</span></label>
+      
         </div>
 
         <div class="orcamento-conteudo" id="orcamento-seguro">
-          <h2 class="font-1-m cor-0">Escolha o plano</h2>
-          <p class="font-1-m cor-0">Esse é um conteudo teste</p>
+          <h2 class="font-1-xs cor-5">Escolha o plano</h2>
+
+
+          <input type="radio" name="produto" value="prata" id="prata" />
+          <label for="seguro">Prata <span>R$199</span></label>
+
+          <input type="radio" name="produto" value="ouro" id="ouro" />
+          <label for="seguro">Ouro <span>R$299</span></label>
+      
         </div>
       </div>
 
@@ -114,7 +129,7 @@
           <input type="text" id="estado" name="estado" />
         </div>
 
-        <button class="botao col-2">Soliciar Orçamento</button>
+        <button class="botao col-2">Solicitar Orçamento</button>
 
       </div>
     </div>
