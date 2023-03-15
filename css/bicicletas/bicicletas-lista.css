@@ -69,4 +69,8 @@
   .bicicletas-lista ul {
     gap: 20px;
   }
+
+  .bicicletas-lista h2 {
+    padding-top: 80px;
+  }
 }
