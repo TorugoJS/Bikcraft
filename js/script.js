@@ -42,3 +42,23 @@ function eventosPerguntas(pergunta) {
 perguntas.forEach(eventosPerguntas);
 
 console.log(perguntas);
+
+// galeria de bicicletas
+const galeria = document.querySelectorAll(".bicicleta-imagens img");
+const galeiraContainer = document.querySelector(".bicicleta-imagens");
+
+function trocarImagem(event) {
+  const img = event.currentTarget;
+  const media = matchMedia("(min-width:1000px)").matches;
+  console.log(media);
+
+  if (media) {
+    galeiraContainer.prepend(img);
+  }
+}
+
+function eventosGaleria(img) {
+  img.addEventListener("click", trocarImagem);
+}
+
+galeria.forEach(eventosGaleria);
